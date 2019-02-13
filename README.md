@@ -4,7 +4,7 @@ This is a simple implementation for a notepad extension, previously i used to us
 
 ## Installation
 
-https://chrome.google.com/webstore/detail/gilimdkahfinmejjcfojdigfmekllafo/publish-accepted
+https://chrome.google.com/webstore/detail/gilimdkahfinmejjcfojdigfmekllafo/
 
 ## Output
 
