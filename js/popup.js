@@ -1,6 +1,6 @@
 function clickHandler(evt){
   var ls = window.localStorage;
-  var lastData = evt.key === 'Enter' ? '\n' : evt.key;
+  var lastData = evt.key === 'Enter' ? '\n' : (evt.value || '');
   var data = document.getElementById('notepad').value + lastData;
   ls.setItem('notepad', data);
 }
