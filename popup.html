@@ -1,5 +1,30 @@
 <html>
-  <body>
+  <head>
+    <style>
+      textarea {
+        border: none;
+        overflow: auto;
+        outline: none;
 
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+
+        resize: none; /*remove the resize handle on the bottom right*/
+      }
+      #notepad {
+        width: 399px;
+        height: 182px;
+        border: "none";
+      }
+
+    </style>
+  </head>
+  <body>
+   <textarea
+    id="notepad"
+  >
+  </textarea>
+    <script src="js/popup.js"></script>
   </body>
 </html>

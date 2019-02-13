@@ -2,7 +2,8 @@
   "name": "NotePad",
   "version": "1.0",
   "description": "Build an Extension!",
-  "permissions": ["storage"],
+  "permissions": ["storage", "activeTab"],
+  "content_security_policy": "script-src 'self'; object-src 'self'",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
