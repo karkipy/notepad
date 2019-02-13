@@ -3,9 +3,7 @@ function clickHandler(evt){
   let lastData = '';
   if(evt.key === 'Enter') {
     lastData = '\n';
-  } else if(!(evt.key === 'Backspace')){
-    lastData = evt.key;
-  } else {
+  } else if(evt.key === 'Backspace'){
     lastData = '';
   }
 
