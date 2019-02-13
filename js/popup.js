@@ -1,13 +1,17 @@
 function clickHandler(evt){
   var ls = window.localStorage;
-  var data = document.getElementById('notepad').value+evt.key;
+  var lastData = evt.key === 'Enter' ? '\n' : evt.key;
+  var data = document.getElementById('notepad').value + lastData;
   ls.setItem('notepad', data);
 }
 
 function poppulateNotepad() {
   var ls = window.localStorage;
   var data = ls.getItem('notepad') || "Text...";
-  document.getElementById('notepad').value = data;
+  var color = ls.getItem('notePadColor') || "#000";
+  var notepad = document.getElementById('notepad');
+  notepad.value = data;
+  notepad.style.color = color;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
