@@ -1,6 +1,14 @@
 function clickHandler(evt){
   var ls = window.localStorage;
-  var lastData = evt.key === 'Enter' ? '\n' : (evt.value || '');
+  let lastData = '';
+  if(evt.key === 'Enter') {
+    lastData = '\n';
+  } else if(!(evt.key === 'Backspace')){
+    lastData = evt.key;
+  } else {
+    lastData = '';
+  }
+
   var data = document.getElementById('notepad').value + lastData;
   ls.setItem('notepad', data);
 }
@@ -15,6 +23,6 @@ function poppulateNotepad() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('notepad').addEventListener('keydown', clickHandler);
+  document.getElementById('notepad').addEventListener('keyup', clickHandler);
   poppulateNotepad();
 });
