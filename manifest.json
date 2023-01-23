@@ -1,6 +1,6 @@
 {
   "name": "NotePad",
-  "version": "1.2",
+  "version": "1.3",
   "description": "Build an Extension!",
   "permissions": [],
   "content_security_policy": "script-src 'self'; object-src 'self'",
